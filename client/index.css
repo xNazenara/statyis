@@ -1,0 +1,107 @@
+@font-face {
+  font-family: BalooTamma2;
+  src: url(fonts/BalooTamma2-SemiBold.ttf);
+}
+
+*, body {
+  font-family: BalooTamma2;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.posts-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.posts-titles {
+  display: flex;
+  flex-direction: column;
+  border: 5px outset #ffa3f7;
+  width: 250px;
+  padding: 15px;
+  user-select: none;
+}
+
+.post-text {
+  flex-grow: 1;
+  border: 5px outset #ffa3f7;
+  padding: 15px;
+  margin-left: 15px;
+}
+
+.post-title {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.post-title-value {
+  flex-grow: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.post-title-value:hover {
+  background: gray;
+}
+
+.post-title-value-selected {
+  background: tomato !important;
+}
+
+.input-container {
+  flex-grow: 1;
+  border: 5px outset #ffa3f7;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.input-title-value {
+  width: 300px;
+  padding: 5px;
+}
+
+.input-text-value {
+  height: 350px;
+  width: 100%;
+  resize: none;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.input-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  user-select: none;
+}
+
+.edit-img, .delete-img, .plus-img {
+  height: 15px;
+  width: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.add-button {
+  margin-bottom: 25px;
+}
+
+::-webkit-input-placeholder {color:#2540cb;}
+::-moz-placeholder          {color:#2540cb;}
+:-moz-placeholder           {color:#2540cb;}
+:-ms-input-placeholder      {color:#2540cb;}
