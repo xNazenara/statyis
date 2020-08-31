@@ -19,7 +19,7 @@ const client = new Client({
   connectionString: connectionString,
   ssl: {
     rejectUnauthorized: false
-  } 
+  }
 })
 
 client.connect()
@@ -112,4 +112,4 @@ app.post('/post-del', (req, res) => {
     })
 })
 
-app.listen(3000, ()=>console.log("Started"))
+app.listen(process.env.PORT || 3000, ()=>console.log("Started"))
